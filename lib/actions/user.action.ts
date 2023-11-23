@@ -82,7 +82,7 @@ export async function deleteUser(params: DeleteUserParams) {
 
     const deletedUser = await User.findByIdAndDelete(user._id);
 
-    return deleteUser;
+    return deletedUser;
   } catch (error) {
     console.log(error);
     throw error;
